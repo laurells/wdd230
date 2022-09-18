@@ -45,6 +45,10 @@ hr {
     margin-top: 20px;
 }
 
+.highlight{
+    color: red
+}
+
 footer{
     background-color: #0076b6;
     color: white;

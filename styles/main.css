@@ -45,8 +45,8 @@ hr {
     margin-top: 20px;
 }
 
-.highlight{
-    color: red
+#currentdate{
+    color: goldenrod
 }
 
 footer{
@@ -55,12 +55,4 @@ footer{
     border-radius: 10px;
     box-shadow: 5px 5px 10px grey;
     text-align: center;
-}
-
-footer h3{
-    padding-top: 20px;
-}
-
-footer p{
-    padding-bottom: 20px
 }

@@ -89,10 +89,11 @@
 
     <footer>
       <h2>&copy; 2022 .:|:. Laurels Echichinwo Jr. .:|:. Nigeria</h2>
-      <p id="currentdate"></p>
+      <span id="currentdate"></span>
+    
       <script src="scripts/main.js">
         let text = document.lastModified;
-                document.getElementById("currentdate").innerHTML = text;
+        document.getElementById("currentdate").innerHTML = `Last Updated: <span id="currentdate">${text}</span>`
       </script>
     </footer>
   </body>

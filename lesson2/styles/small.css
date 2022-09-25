@@ -1,0 +1,106 @@
+* { -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Open Sans Raleway*/
+
+
+body {
+    font-family: Arial, Helvetica;
+    font-size: 20px;
+    background-color: white;
+    color: #525252
+}
+
+header {
+    padding: 1rem 1%;
+    background-color: rgb(128, 0, 0);
+}
+
+header h1 {
+    margin: 0;
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 10px 20px black;
+}
+
+header h2 {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 10px 10px 20px black;
+}
+
+main {
+    display: block;
+    padding: 1rem 1%;
+    margin: 2%;
+}
+
+main img {
+    max-width: 100%;
+    margin: 2%;
+    border: 1.5px solid rgb(128, 0, 0);
+    border-radius: 10px;
+}
+
+.principle {
+    border-radius: 10px 10px 0 0;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.home-grid h2, .home-grid h3 {
+    background-color: rgb(128, 0, 0);
+    color: white;
+    margin: 0;
+    padding: 2%;
+    text-align: center;
+    
+}
+
+.site {
+    font-size: 20px;
+}
+
+.home-grid div {
+    border: 10px solid white;
+    margin: 3%;
+    border-radius: 10px;
+    background-color: rgba(235, 154, 32, 0.185);
+}
+
+.home-grid a{
+    display: block;
+    text-align: center;
+    margin: 3%;
+}
+
+.home-grid p {
+    margin: 5%;
+    
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 0.5%;
+}
+
+footer p {
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica;
+    text-shadow: 10px 10px 20px black;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

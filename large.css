@@ -1,0 +1,37 @@
+
+/* 64em is also 1028px (if basefont is 16px) 
+@media only screen and (min-width: 64rem) {
+
+
+    /*----------- BODY --------------*/
+    
+   /* p {
+        max-width: 600px;
+    }
+    
+    #logo-image {
+        margin-top: 3%;
+        margin-left: 10%;
+    }
+    
+    /*----------- NAVIGATION --------------*/
+    
+    /*nav ul li a{
+        padding-right: 3%;
+        margin-left: 10%;
+        text-align: center;
+    }
+    
+    .ul-li-3 {
+        margin-left: 26%;
+    }
+    
+    /*----------- MAIN --------------*/
+    
+   /* main h2, main h3 {
+        margin-top: 2%;
+    }
+    
+    /*----------- FOOTER --------------*/
+        
+   /* } /* end of media query */

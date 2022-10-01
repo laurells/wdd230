@@ -1,0 +1,111 @@
+ /* 35em is also 560px (if basefont is 16px) */
+ @media only screen and (min-width: 35rem) {
+
+
+    /*----------- BODY --------------*/
+    
+    body {
+        max-width: 80%;
+    }
+
+    
+    
+    /*----------- HEADER --------------*/
+
+    header {
+        max-width: 90%;
+        background-color: white;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    header h1 {
+        display: inline;
+        font-size: 300%;
+        padding: 0;
+        margin-left: 4%;
+        text-align: bottom;
+        line-height: 620%;
+    }
+
+    #logo-image {
+        max-width: 100px;
+        margin-left: 7%;
+        padding: 0;
+    }
+    
+    /*----------- NAVIGATION --------------*/
+    
+    nav {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    nav ul li a{
+        float: left;
+        max-width: auto;
+        padding: 2%;
+        margin-top: 0;
+        margin-left: 8%;
+        text-align: center;
+        border: 0;
+    }
+    
+    
+    /*----------- MAIN --------------*/
+    
+    main {
+        max-width: 90%;
+    }
+
+    main ul li{
+        margin-left: 26%;
+    }
+
+    .ul-li-2 {
+        margin-left: 12%;
+    }
+
+    .ul-li-3 {
+        margin-left: 18%;
+        text-align: left;
+    }
+
+    .ul-li-3 li {
+        margin-left: 0;
+    }
+
+    .color-scheme p {
+        text-align: center;
+    }
+
+    .p1 {
+        margin-top: 2%;
+    }
+    
+    main p {
+        text-align: center;
+    }
+    header div {
+        flex-direction: row;
+      }
+    
+      nav ul {
+        flex-direction: row;
+      }
+    
+      img {
+        width: 250px;
+      }
+    
+      body {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+    
+
+    /*----------- FOOTER --------------*/
+        
+    } /* end of media query */

@@ -94,8 +94,9 @@ nav ul li a{
     font-family: 'Lato', sans-serif; 
 }
 
-nav li a:active {
+nav ul li.home a:active {
     border-bottom: 5px double;
+    color: #fff5d7
   }
 
 
@@ -104,10 +105,11 @@ nav ul li.home a {
     border-bottom: 1px #fff5d7 solid;
 }
 
-a:hover,
+/*a:hover,
 a:active {
   border-bottom: 5px double;
-}
+  color: #fff5d7;
+}*/
 
 nav ul li a:hover {
     color: #51A3A3;
@@ -154,7 +156,7 @@ p {
     margin-inline-end: 0px;
 }
 
-.center {
+.updated {
     text-align: center;
 }
 

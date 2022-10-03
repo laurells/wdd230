@@ -1,5 +1,6 @@
 let current_date = new Date();
-let current_year = current_date.getFullYear();
+let current_year = new Date().getFullYear();
+current_date.getFullYear() == current_year
 
 document.querySelector("year").innerHTML = current_year;
 

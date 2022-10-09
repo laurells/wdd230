@@ -65,14 +65,14 @@
         min-width: 100%;
     }
 
-    .myphoto{
+    /*.myphoto{
         margin-top: 2.5%;
         width: 82%;
     }
 
     .myphoto img {
         margin-top: 2.5%;
-    }
+    }*/
 
     .link-1 {
         grid-column: 2/4;
@@ -120,8 +120,7 @@
     /*----------- FOOTER --------------*/
 
     footer{
-        padding-top: 1%;
-        color: #00303F
+        color: #02254b;
     }
 
     hr {
@@ -189,8 +188,7 @@
         grid-column: 3/4;
         grid-row: 2/3;
         text-align: left;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 6%;
     }
 
     .footer-a {

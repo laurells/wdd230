@@ -1,115 +1,145 @@
 <!DOCTYPE html>
 
 <html lang="en-us">
+  <head>
+    <title>Capital Chamber of Commerce | Home</title>
+    <meta charset="utf-8" />
 
-    <head>
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Capital Chamber of Commerce Web Site" />
 
-      <title>Capital Chamber of Commerce | Home</title>
-      <meta charset="utf-8">
+    <!-- STYLE SHEETS -->
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="styles/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
+    <link href="styles/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
+    <link href="styles/large.css" rel="stylesheet" />
 
-      <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name ="description" content="Capital Chamber of Commerce Web Site">
+    <!-- Font Families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-      <!-- STYLE SHEETS -->
-      <link href="styles/normalize.css" rel="stylesheet">
-      <!-- phone-default -->
-      <link href="styles/small.css" rel="stylesheet">
-      <!-- enhance-tablet -->
-      <link href="styles/medium.css" rel="stylesheet">
-      <!-- enhance-desktop -->
-      <link href="styles/large.css" rel="stylesheet">
+  <body>
+    <!-- HEADER HERE -->
+    <header id="master" class="main-header">
+      <div class="topbar">
+        <div class="topbar_message">
+          <p>Welcome to the Home of Investment</p>
+        </div>
+        <div id="date">
+          <span id="currentDate"></span>
+        </div>
+      </div>
 
-      <!-- Font Families -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
-  
-    </head>
+      <img
+        id="logo-image"
+        src="images/capital.png"
+        alt="Capital Chamber of Commerce Logo"
+      />
+      <h1 id="title-page">Capital Chamber of Commerce</h1>
+      <h2>No 1. Real Estate Investment Platform</h2>
 
-    <body>
+      <nav class="clearfix">
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
 
-        <!-- HEADER HERE -->
-        <header id="master" class="main-header">
-            <div class="topbar">
-                <div class="topbar_message">
-                    <p>Welcome to the Home of Investment</p>
-                </div>
-                <div id="date">
-                    <span id="currentDate"></span>
-                </div>
-            </div>
+        <ul id="primary-nav">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
 
-            <img id="logo-image" src="images/capital.png" alt="Capital Chamber of Commerce Logo">
-            <h1 id="title-page">Capital Chamber of Commerce</h1>
-            <h2>No 1. Real Estate Investment Platform</h2>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress" style="width: 92.9623%"></div>
+      </div>
+    </header>
 
-            <nav class="clearfix">
-    
-                <ul id="primary-nav">
-    
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="#">Discover</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                  
-    
-                </ul>
-    
-            </nav>
+    <!-- NAVIGATION HERE -->
 
-          <div class="progress-container">
-            <div class="progress-bar" id="progress" style="width: 92.9623%"></div>
-          </div>  
+    <!-- MAIN HERE -->
+    <main class="clearfix">
+      <h1>Home</h1>
 
-        </header>
+      <div class="home-grid">
+        <a href="#" class="link-1"
+          ><img
+            src="https://via.placeholder.com/300.png?text=hero+with+site+name"
+            class="placeholder-1"
+            alt="placeholder-1"
+        /></a>
+        <a href="#" class="link-2"
+          ><img
+            src="https://via.placeholder.com/300.png?text=news+release"
+            class="placeholder-2"
+            alt="placeholder-2"
+        /></a>
+        <a href="#" class="link-3"
+          ><img
+            src="https://via.placeholder.com/300.png?text=spotlight+1"
+            class="placeholder-3"
+            alt="placeholder-3"
+        /></a>
+        <a href="#" class="link-4"
+          ><img
+            src="https://via.placeholder.com/300.png?text=spotlight+2"
+            class="placeholder-4"
+            alt="placeholder-4"
+        /></a>
+        <a href="#" class="link-5"
+          ><img
+            src="https://via.placeholder.com/300.png?text=spotlight+3"
+            class="placeholder-5"
+            alt="placeholder-5"
+        /></a>
+        <a href="#" class="link-6"
+          ><img
+            src="https://via.placeholder.com/300.png?text=join"
+            class="placeholder-6"
+            alt="placeholder-6"
+        /></a>
+        <a href="#" class="link-7"
+          ><img
+            src="https://via.placeholder.com/300.png?text=weather"
+            class="placeholder-7"
+            alt="placeholder-7"
+        /></a>
+      </div>
+    </main>
 
-        <!-- NAVIGATION HERE -->
+    <!-- FOOTER HERE -->
+    <footer>
+      <div class="footer-div-1">
+        <img
+          class="logo-img-footer"
+          src="images/capital.png"
+          alt="Quito Chamber of Commerce Logo"
+        />
+        <h2>Capital Chamber of Commerce</h2>
+        <p class="footer-p-1">Address: No 14, Stadium rd, Ikeja</p>
+        <p class="footer-p-2">Lagos, Nigeria</p>
+        <p class="footer-p-3">capicgroup.com</p>
+        <p class="footer-p-4">(+234)8077591629 | (+234)9013026773</p>
+        <a class="footer-a" href="#">Link to Map</a>
+      </div>
 
+      <hr />
 
-        <!-- MAIN HERE -->
-        <main class="clearfix">
+      <p class="last-p">
+        &copy; Capital Chamber of Commerce | Echichinwo Laurels Jr. | WDD 230
+        Project <span id="last-updated"></span>
+      </p>
+    </footer>
 
-            <h1>Home</h1>
-
-            <div class="home-grid">
-
-                <a href="#" class="link-1"><img src="https://via.placeholder.com/300.png?text=hero+with+site+name" class="placeholder-1" alt="placeholder-1"></a>
-                <a href="#" class="link-2"><img src="https://via.placeholder.com/300.png?text=news+release" class="placeholder-2" alt="placeholder-2"></a>
-                <a href="#" class="link-3"><img src="https://via.placeholder.com/300.png?text=spotlight+1" class="placeholder-3" alt="placeholder-3"></a>
-                <a href="#" class="link-4"><img src="https://via.placeholder.com/300.png?text=spotlight+2" class="placeholder-4" alt="placeholder-4"></a>
-                <a href="#" class="link-5"><img src="https://via.placeholder.com/300.png?text=spotlight+3" class="placeholder-5" alt="placeholder-5"></a>
-                <a href="#" class="link-6"><img src="https://via.placeholder.com/300.png?text=join" class="placeholder-6" alt="placeholder-6"></a>
-                <a href="#" class="link-7"><img src="https://via.placeholder.com/300.png?text=weather" class="placeholder-7" alt="placeholder-7"></a>
-
-            </div>
-
-        </main>
-
-        <!-- FOOTER HERE -->
-        <footer>
-
-            <div class="footer-div-1">
-
-                <img class="logo-img-footer" src="images/capital.png" alt="Quito Chamber of Commerce Logo">
-                <h2>Capital Chamber of Commerce</h2>
-                <p class="footer-p-1">Address: No 14, Stadium rd, Ikeja</p>
-                <p class="footer-p-2">Lagos, Nigeria</p>
-                <p class="footer-p-3">capicgroup.com</p>
-                <p class="footer-p-4">(+234)8077591629 | (+234)9013026773</p>
-                <a class="footer-a" href="#">Link to Map</a>
-                
-            </div>
-
-            <hr>
-
-            <p class="last-p">&copy; Capital Chamber of Commerce | Echichinwo Laurels Jr. | WDD 230 Project <span id="last-updated"></span></p>
-
-        </footer>
-
-        <script src="scripts/main.js"></script>
-
-    </body>
-  
+    <script src="scripts/main.js"></script>
+  </body>
 </html>

@@ -255,11 +255,33 @@ main h1 {
 }
 
 .home-grid div {
-  border: 1px solid black;
+  border: 0.2px solid #ff8c00;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 5px 5px 10px #51a3a3;
+  box-shadow: 2px 2px 5px silver;
 }
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+main figurepicture {
+  width: 100%;
+  margin: 0 0 0 2%;
+  float: right;
+}
+main figure.picture img {
+  width: 100%;
+}
+main figure.picture figcaption {
+  text-align: center;
+  font-size: 0.75rem;
+}
+/* picture img{
+  width: 50%;
+  align-self: center;
+  border: 10px solid #132a13;
+} */
 
 .home-grid a {
   width: 120%;
@@ -274,6 +296,38 @@ main h1 {
 
 .hero-image {
   position: relative;
+}
+
+input[type="number"] {
+  max-width: 80%;
+  padding: 10px 10px;
+  margin: 2px 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif", "Arial", sans-serif, "Verdana",
+    sans-serif, "Helvetica", sans-serif;
+}
+
+.temperature {
+  margin-left: 10px;
+}
+button,
+input {
+  overflow: auto;
+  color: #02254b;
+  margin-left: 20px;
+}
+div.link-5 h2 {
+  margin-left: 50px;
+  color: #02254b;
+  font-size: 18px;
+}
+
+div.link-5 {
+  background-color: burlywood;
+}
+
+div.link-1 {
+  background-color: ghostwhite;
 }
 
 /*----------- FOOTER --------------*/

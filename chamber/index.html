@@ -32,13 +32,15 @@
     <header id="master" class="main-header">
       <div class="topbar">
         <div class="topbar_message">
-          <p>Welcome to the Home of Investment. 🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+          <p>
+            Welcome to the Home of Investment. 🤝🏼 Come join us for the chamber
+            meet and greet Wednesday at 7:00 p.m.
+          </p>
         </div>
         <div id="date">
           <span id="currentDate"></span>
         </div>
       </div>
-  
 
       <img
         id="logo-image"
@@ -50,12 +52,12 @@
 
       <nav class="clearfix">
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-          <ul id="primary-nav">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="#">Discover</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Contact Us</a></li>
+        <ul id="primary-nav">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -68,50 +70,83 @@
 
     <!-- MAIN HERE -->
     <main class="clearfix">
-      <p>You are Welcome to the capital investment's home! If you are looking for properties to invest on consider Capital Investments. </p>
       <div class="home-grid">
-        <a href="#" class="link-1"
-          ><img
-            src="images/iStock-978520596.jpg"
-            class="placeholder-1"
-            alt="placeholder-1"
-        /></a>
-        <a href="#" class="link-2"
-          ><img
-            src="images/Commercial-Vs-Residential_02-750x370.png"
-            class="placeholder-2"
-            alt="placeholder-2"
-        /></a>
-        <a href="#" class="link-3"
-          ><img
-            src="images/gettyimages-1299658677.jpg"
-            class="placeholder-3"
-            alt="placeholder-3"
-        /></a>
-        <a href="#" class="link-4"
-          ><img
-            src="images/Sell-Property-Quickly.jpg"
-            class="placeholder-4"
-            alt="placeholder-4"
-        /></a>
-        <a href="#" class="link-5"
-          ><img
-            src="images/Alaro-city-650x430.jpg"
-            class="placeholder-5"
-            alt="placeholder-5"
-        /></a>
-        <a href="https://www.forbes.com/real-estate/?sh=7974e427730e" class="link-6"
-          ><img
-            src="images/news.jpg"
-            class="placeholder-6"
-            alt="placeholder-6"
-        /></a>
-        <a href="#" class="link-7"
-          ><img
-            src="images/image.jpg"
-            class="placeholder-7"
-            alt="placeholder-7"
-        /></a>
+        <div class="link-1">
+          <figure class="picture">
+            <img
+              src="images/capital_chamber.jpg"
+              class="placeholder-1"
+              alt="placeholder-1"
+              sizes="50vw"
+              srcset="
+                images/capital_chamber-small.jpg  200w,
+                images/capital_chamber-medium.jpg 500w,
+                images/capital_chamber-large.jpg  800w
+              "
+            />
+            <figcaption>Invest with Capital Chamber</figcaption>
+          </figure>
+          <p>
+            You are Welcome to the capital investment's home! If you are looking
+            for properties to invest on consider Capital Investments.
+          </p>
+        </div>
+        <div class="link-2">
+          <a href="#" class="#"
+            ><img
+              src="images/Commercial-Vs-Residential_02-750x370.png"
+              class="placeholder-2"
+              alt="placeholder-2"
+          /></a>
+        </div>
+        <div class="link-3">
+          <a href="#" class="link-3"
+            ><img
+              src="images/gettyimages-1299658677.jpg"
+              class="placeholder-3"
+              alt="placeholder-3"
+          /></a>
+        </div>
+        <div class="link-4">
+          <a href="#" class="link-4"
+            ><img
+              src="images/Sell-Property-Quickly.jpg"
+              class="placeholder-4"
+              alt="placeholder-4"
+          /></a>
+        </div>
+        <div class="link-5">
+          <h2>Local Weather</h2>
+          <form id="form">
+            <input
+              type="number"
+              id="temperature"
+              placeholder="Temperature (F)"
+            />
+            <input type="number" id="wind" placeholder="Wind speed (mph)" />
+            <input type="submit" value="Wind Chill" />
+          </form>
+          <p>Wind Chill: <span id="windChill"></span>&deg;</p>
+        </div>
+        <div class="link-6">
+          <a
+            href="https://www.forbes.com/real-estate/?sh=7974e427730e"
+            class="link-6"
+            ><img
+              src="images/news.jpg"
+              class="placeholder-6"
+              alt="placeholder-6"
+          /></a>
+        </div>
+        <div class="link-7">
+          <a href="#" class="#"
+            ><img
+              src="images/Alaro-city-650x430.jpg"
+              class="placeholder-5"
+              alt="placeholder-5"
+            />
+          </a>
+        </div>
       </div>
     </main>
 
@@ -140,5 +175,6 @@
     </footer>
 
     <script src="scripts/main.js"></script>
+    <script src="scripts/windchill.js"></script>
   </body>
 </html>

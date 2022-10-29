@@ -1,0 +1,13 @@
+img {
+
+    background: #F1F1FA;
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: 20px auto;
+    border: 0;
+    transition: filter 0.5s;
+  }
+  h1{
+  text-align: center;
+  }

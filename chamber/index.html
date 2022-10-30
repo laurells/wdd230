@@ -44,7 +44,7 @@
 
       <img
         id="logo-image"
-        src="images/capital.png"
+        src="images/capital.webp"
         alt="Capital Chamber of Commerce Logo"
       />
       <h1 id="title-page">Capital Chamber of Commerce</h1>
@@ -79,9 +79,9 @@
               alt="placeholder-1"
               sizes="50vw"
               srcset="
-                images/wdd230-org-small.jpg  200w,
-                images/wdd230-org-medium.jpg 500w,
-                images/wdd230-org-large.jpg  800w
+                images/small-wdd230-org.jpg  200w,
+                images/medium-wdd230-org.jpg 500w,
+                images/large-wdd230-org.jpg  800w
               "
             />
             <figcaption>Invest with Capital Chamber</figcaption>
@@ -117,16 +117,17 @@
         </div>
         <div class="link-5">
           <h2>Local Weather</h2>
-          <form id="form">
-            <input
-              type="number"
-              id="temperature"
-              placeholder="Temperature (F)"
-            />
-            <input type="number" id="wind" placeholder="Wind speed (mph)" />
-            <input type="submit" value="Wind Chill" />
-          </form>
-          <p>Wind Chill: <span id="windChill"></span>&deg;</p>
+          <figure class="sun">
+            <img src="images/cloud.jpg" alt="rain and cloud">
+            <h3> 33&#8451;</h3>
+          </figure>
+          <div class="windchill">
+            <h2> Partly cloudy </h2>
+          </div>
+          <div class="compute">
+            <p>Temperature:50km/h <br>  Speed:4  <br> WindChill=<span id="windchill"></span> </p>
+            <a href="https://www.weather.gov/epz/wxcalc_windchill" target="blank">Goverment</a>
+          </div>
         </div>
         <div class="link-6">
           <a
@@ -155,7 +156,7 @@
       <div class="footer-div-1">
         <img
           class="logo-img-footer"
-          src="images/capital.png"
+          src="images/capital.webp"
           alt="Quito Chamber of Commerce Logo"
         />
         <h2>Capital Chamber of Commerce</h2>

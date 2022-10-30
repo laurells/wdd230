@@ -1,21 +1,14 @@
-const form = document.getElementById('form');
-form.addEventListener('submit', function(event)
-{ 
-    event.preventDefault();
-    const temperature = document.getElementById('temperature').value;
-    const wind = document.getElementById('wind').value;
+//windchill
+let temperature =50;
+let windspeed=4;
 
-    if (temperature <= 50 && wind > 3)
-    {
-    const windChill = (35.74 + (0.6215 * temperature))-(35.75 * Math.pow(wind,0.16)) + 
-    (0.4275 * temperature * Math.pow(wind,0.16));
-    const windChillRounded = Math.round(windChill);
-    document.getElementById("windChill").innerHTML = windChillRounded;
-    }
-    else
-    {
-    notApplicable = "N/A";
-    document.getElementById("windChill").innerHTML = notApplicable;
-    }
+if (temperature<=50 &&  windspeed > 3){
+    //Calculate the wind chill
+    let chillFactor = 35.74 + (0.6215 * temperature) - Math.pow((35.75*windspeed),.16) +Math.pow((.4275*temperature*windspeed),.16) ;
+    document.getElementById("windchill").innerHTML =chillFactor.toFixed(2) + " km/h";
 
-});
+}
+else{
+    //display nothing
+    document.getElementById("windchill").innerHTML = "N/A";
+}

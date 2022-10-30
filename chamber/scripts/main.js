@@ -22,6 +22,6 @@ document.querySelector("#last-updated").innerHTML = date;
 const hero = new Date();
 const  day=hero.getDay();
 if (day < 1 || day > 2) {
-    const x = document.querySelector('topbar');
+    const x = document.querySelector('.topbar');
     x.remove();
   }

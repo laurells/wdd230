@@ -121,7 +121,7 @@
     margin-top: 1%;
     margin-bottom: 1%;
     margin-left: 10%;
-    background: #51a3a3;
+    background: #02254b;
     text-align: center;
     border: none;
     padding: 1%;
@@ -130,6 +130,7 @@
 
   nav ul {
     max-width: 84%;
+    font-weight: bold;
     
   }
 
@@ -147,13 +148,11 @@
   .active {
     border-right: 0;
     border-bottom: 0;
-    color: #51a3a3;
+    color: #00303f;
     border-bottom: 1px #FF8C00 solid;
     }
   
-  .active:hover {
-    border-bottom: 1px #FF8C00 solid
-  }
+  
 
   nav {
     margin: 0;

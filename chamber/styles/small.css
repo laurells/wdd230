@@ -1,16 +1,4 @@
-/*Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.*/
-
-html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
 /*----------- apply a natural box layout model to all elements --------------*/
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 body {
   margin: 0 auto;
@@ -92,7 +80,7 @@ header h1 {
 header h2 {
   font-size: 80%;
   margin-left: 30%;
-  color: #ff8c00;
+  color: #00303f;
 }
 
 .date {
@@ -208,24 +196,27 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  
 }
 
 nav ul li a {
   display: block;
   padding: 0.8rem 2vw;
   text-decoration: none;
-  color: #00303f;
-  font-size: 1em;
-  font-weight: bolder;
+  color: #02254b;
+  font-size: 1.3em;
+  font-weight:bolder;
 }
 
 .active {
-  color: #51a3a3;
+  color: #02254b;
   border-bottom: 1px #ff8c00 solid;
 }
 
+
 nav ul li a:hover {
   border-bottom: 1px #ff8c00 solid;
+  color: #00303f
 }
 
 nav ul.open {

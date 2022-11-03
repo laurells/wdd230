@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+header {
+  background-color: #7d4427;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+  box-shadow: 0 0 10px silver;
+}
+
+.hero-name {
+  text-align: left;
+  color: ghostwhite;
+  text-shadow: 1px 1px #1c1d1c;
+  font-family: "Faustina", serif, "Arial", sans-serif;
+  font-size: 30px;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif, "Arial", sans-serif, "Verdana", sans-serif,
+    "Helvetica", sans-serif;
+  font-size: 20px;
+}
+
+.linklist ul li {
+  margin-left: 40px;
+}
+
+footer {
+  text-align: center;
+  color: ghostwhite;
+  font-size: 20px;
+  padding: 30px;
+  background-color: #7d4427;
+  border-radius: 0px;
+  box-shadow: 0 0 10px silver;
+}
+
+footer h2 {
+  font-size: 20px;
+}
+
+:root {
+  --back: #0f1b07;
+  --back2: #5c821a;
+  --foredark: silver;
+  --forelight: hsla(0, 0%, 100%, 1);
+  --border: hsl(0, 0%, 20%);
+  --borderlight: hsl(0, 0%, 33%);
+  --shadow: silver;
+  --zebra: #cecece;
+}
+
+table {
+  margin: 77px auto;
+  border: thin solid var(--border);
+  box-shadow: 0 0 10px var(--shadow);
+  border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+  color: var(--back);
+  font-size: 0.85rem;
+}
+
+tr:first-child th,
+.highlight {
+  background-color: var(--back);
+  color: var(--forelight);
+}
+
+th,
+td {
+  padding: 7px 15px;
+  border: 1px solid var(--borderlight);
+}
+
+th {
+  background-color: var(--back2);
+}
+
+td {
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--zebra);
+}

@@ -246,7 +246,7 @@ main h1 {
 }
 
 .home-grid div {
-  border: 0.2px solid #ff8c00;
+  border: 0.1px solid silver;
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 2px 2px 5px silver;
@@ -268,11 +268,17 @@ main figure.picture figcaption {
   text-align: center;
   font-size: 0.75rem;
 }
-/* picture img{
-  width: 50%;
+picture img{
   align-self: center;
-  border: 10px solid #132a13;
-} */
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+.link-5{
+  text-align: center;
+  display: block;
+  flex-direction: row;;
+}
 
 .home-grid a {
   width: 120%;
@@ -314,7 +320,7 @@ div.link-5 h2 {
 }
 
 div.link-5 {
-  background-color: burlywood;
+  background-color: ghostwhite;
 }
 
 div.link-1 {

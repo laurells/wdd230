@@ -269,10 +269,18 @@
     margin-left: 1%;
   }
 
+  .weather-img img{
+    width: 25%;
+  }
+
   hr {
     width: 80%;
     margin-left: 10%;
   }
+  
+  .link-5 h2{
+    margin-right: 40px;
+}
 
   footer {
     border: 1px solid black;

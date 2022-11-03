@@ -1,14 +1,30 @@
 //windchill
-let temperature =50;
-let windspeed=4;
+const temperatureCelsius = 33;
+const windSpeedKmH = 2.5;
 
-if (temperature<=50 &&  windspeed > 3){
+const temperatureFahrenheit = temperatureCelsius * (9 / 5) + 32;
+const windSpeedMH = windSpeedKmH / 1.609;
+
+document.querySelector('.temperature').textContent = temperatureCelsius;
+document.querySelector('.wind').textContent = windSpeedKmH;
+
+if (temperatureFahrenheit <= 50 && windSpeedMH > 3) {
     //Calculate the wind chill
-    let chillFactor = 35.74 + (0.6215 * temperature) - Math.pow((35.75*windspeed),.16) +Math.pow((.4275*temperature*windspeed),.16) ;
-    document.getElementById("windchill").innerHTML =chillFactor.toFixed(2) + " km/h";
+    const windChill = (35.74 + (0.6215 * temperatureFahrenheit)) - (35.75 * Math.pow(windSpeedMH, 0.16)) +
+        (0.4275 * temperatureFahrenheit * Math.pow(windSpeedMH, 0.16));
+    const windChillRounded = Math.round(windChill);
+    document.querySelectorAll('.windChill').textContent = windChillRounded;
+}
 
-}
-else{
+else {
     //display nothing
-    document.getElementById("windchill").innerHTML = "N/A";
+    document.querySelector('.windChill').textContent = 'N/A';
 }
+
+
+
+
+
+
+
+

@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!-- maintains proper display when a phone is tilted-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Table build activity created by 
+
+    <!-- Description -->
+    <meta name="description" content="Table build activity by 
     Echichinwo Laurels Jr. in WDD 230: Web Frontend Development at 
     Brigham Young University - Idaho">
     <title>Course Portal Page</title>
+
+    <!-- STYLE SHEETS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Faustina&family=Roboto&display=swap" rel="stylesheet">
@@ -17,19 +22,19 @@
 </head>
 
 <body>
-    <header class="hero-header">
-        <h1 class="hero-name">TABLE BUILD</h1>
+    <header class="master-header">
+        <h1 class="title">TABLE BUILD WDD230</h1>
     </header>
     <main>
         <table>
             <caption>Table 1: Wasatch Sales</caption>
             <thead>
                 <tr>
-                    <th colspan="2" scope="colgroup">Sales</th>
+                    <th colspan="2" scope="columngroup">Sales</th>
                 </tr>
                 <tr>
-                    <th scope="col">Month</th>
-                    <th scope="col">Amount</th>
+                    <th scope="column1">Month</th>
+                    <th scope="column2">Amount</th>
                 </tr>
             </thead>
             <tbody>
@@ -39,7 +44,7 @@
                 </tr>
                 <tr>
                     <td>August</td>
-                    <td class="highlight">8,000</td>
+                    <td class="price1">8,000</td>
                 </tr>
                 <tr>
                     <td>September</td>
@@ -57,7 +62,7 @@
         </table>
     </main>
     <footer>
-        <h2>&copy;<span id="date1"></span> - Laurels Echichinwo Jr. - Nigeria</h2>
+        <h2>&copy;<span id="current-date"></span> | - Laurels Echichinwo Jr. - </h2>
     </footer>
     <script src="scripts/main.js"></script>            
 </body>

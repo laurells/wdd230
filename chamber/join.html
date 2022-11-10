@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+  <head>
+    <title>Capital Chamber of Commerce | Home</title>
+    <meta charset="utf-8" />
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Capital Chamber of Commerce Web Site" />
+
+    <!-- STYLE SHEETS -->
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="styles/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
+    <link href="styles/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
+    <link href="styles/large.css" rel="stylesheet" />
+
+    <!-- Font Families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER HERE -->
+    <header id="master" class="main-header">
+      <div class="topbar">
+        <div class="topbar_message">
+          <p>
+            Welcome to the Home of Investment. 🤝🏼 Come join us for the chamber
+            meet and greet Wednesday at 7:00 p.m.
+          </p>
+        </div>
+        <div id="date">
+          <span id="currentDate"></span>
+        </div>
+      </div>
+
+      <img
+        id="logo-image"
+        src="images/capital.webp"
+        alt="Capital Chamber of Commerce Logo"
+      />
+      <h1 id="title-page">Capital Chamber of Commerce</h1>
+      <h2>No 1. Real Estate Investment Platform</h2>
+
+      <nav class="clearfix">
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primary-nav">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="progress-container">
+        <div class="progress-bar" id="progress" style="width: 92.9623%"></div>
+      </div>
+    </header>
+    <main class="joinContainer">
+      <h1>Sign up to join</h1>
+      <div>
+        <div class="membership">
+          <h2>Membership Levels</h2>
+          <ul>
+            <li>
+              <h3>NP Membership</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio inventore laborum consequatur nobis, commodi enim
+                repudiandae! Saepe repudiandae laborum suscipit quis. Vitae
+                dicta in, sequi perspiciatis ullam vel maxime adipisci.
+              </p>
+            </li>
+            <li>
+              <h3>Bronze Membership</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio inventore laborum consequatur nobis, commodi enim
+                repudiandae! Saepe repudiandae laborum suscipit quis. Vitae
+                dicta in, sequi perspiciatis ullam vel maxime adipisci.
+              </p>
+            </li>
+            <li>
+              <h3>Silver Membership</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio inventore laborum consequatur nobis, commodi enim
+                repudiandae! Saepe repudiandae laborum suscipit quis. Vitae
+                dicta in, sequi perspiciatis ullam vel maxime adipisci.
+              </p>
+            </li>
+            <li>
+              <h3>Gold Membership</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio inventore laborum consequatur nobis, commodi enim
+                repudiandae! Saepe repudiandae laborum suscipit quis. Vitae
+                dicta in, sequi perspiciatis ullam vel maxime adipisci.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <form
+          id="joinUs"
+          name="joinUs"
+          action="https://laurells.github.io/wdd230/chamber/thankyou.html"
+          method="get"
+        >
+          <label for="fname">First name</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            autofocus
+            required
+          /><br /><br />
+          <label for="lname">Last name:</label><br />
+          <input type="text" id="lname" name="lname" required /><br /><br />
+
+          <label for="busname">Business position title</label><br />
+          <input
+            type="text"
+            id="busname"
+            name="busname"
+            pattern="[a-zA-Z -]{7,}"
+          /><small
+            >Accepts only alpha characters, hyphens, with at least 7
+            characters.</small
+          ><br /><br />
+
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+          /><br /><br />
+
+          <label for="phone">Phone number:</label>
+          <input type="tel" id="phone" name="phone" required /><br /><br />
+
+          <label for="bustitle">Business name:</label>
+          <input
+            type="tel"
+            id="bustitle"
+            name="bustitle"
+            required
+          /><br /><br />
+
+          <label for="membership">Choose membership level:</label>
+          <select name="membership" id="membership">
+            <option value="" disabled selected>Select your option</option>
+            <option value="np">NP Membership</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option></select
+          ><br /><br />
+
+          <label for="busdesc">Business Description:</label>
+          <textarea
+            id="busdesc"
+            name="busdesc"
+            rows="4"
+            placeholder="Type your description here"
+          ></textarea
+          ><br /><br />
+          <input type="hidden" id="dateTime" name="dateTime" value="" />
+          <input class="submit" type="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-div-1">
+        <img
+          class="logo-img-footer"
+          src="images/capital.webp"
+          alt="Capital Chamber of Commerce Logo"
+        />
+        <h2>Capital Chamber of Commerce</h2>
+        <p class="footer-p-1">Address: No 14, Stadium rd, Ikeja</p>
+        <p class="footer-p-2">Lagos, Nigeria</p>
+        <p class="footer-p-3">capicgroup.com</p>
+        <p class="footer-p-4">(+234)8077591629 | (+234)9013026773</p>
+        <a class="footer-a" href="#">Link to Map</a>
+      </div>
+
+      <hr />
+
+      <p class="last-p">
+        &copy; Capital Chamber of Commerce | Echichinwo Laurels Jr. | WDD 230
+        Project <span id="last-updated"></span>
+      </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/windchill.js"></script>
+  </body>
+</html>

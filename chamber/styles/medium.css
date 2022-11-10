@@ -13,13 +13,12 @@
   /*----------- BODY --------------*/
 
   body {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
   header,
   footer {
     width: 100%;
-    
   }
 
   footer {
@@ -30,10 +29,7 @@
     background-color: white;
   }
 
-
   /*----------- HEADER --------------*/
-
-
 
   header img {
     margin-top: 2%;
@@ -44,11 +40,10 @@
     padding: 0;
     margin: 0;
     padding-top: 3%;
-    
   }
 
-  h1{
-    color: #00303f
+  h1 {
+    color: #00303f;
   }
 
   header h2 {
@@ -68,8 +63,8 @@
     color: white;
   }
 
-  h2{
-    color: #FF8C00
+  h2 {
+    color: #ff8c00;
   }
 
   .date {
@@ -77,7 +72,7 @@
     font-size: 120%;
     text-align: center;
     margin-left: 10%;
-    color: white
+    color: white;
   }
 
   div.topbar {
@@ -98,15 +93,14 @@
     position: relative;
   }
 
-  
-.topbar p {
-        color: ghostwhite;
-        font-size: 1.05rem;
-        margin: 0;
-        font-weight: bolder;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
+  .topbar p {
+    color: ghostwhite;
+    font-size: 1.05rem;
+    margin: 0;
+    font-weight: bolder;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
   /*----------- NAVIGATION --------------*/
 
@@ -131,28 +125,25 @@
   nav ul {
     max-width: 84%;
     font-weight: bold;
-    
   }
 
   nav ul li {
-    border-bottom: 1px #FF8C00 solid;
+    border-bottom: 1px #ff8c00 solid;
   }
 
   nav ul li,
   .active {
     width: 100%;
     text-align: center;
-    border-bottom: 1px #FF8C00 solid
+    border-bottom: 1px #ff8c00 solid;
   }
 
   .active {
     border-right: 0;
     border-bottom: 0;
     color: #00303f;
-    border-bottom: 1px #FF8C00 solid;
-    }
-  
-  
+    border-bottom: 1px #ff8c00 solid;
+  }
 
   nav {
     margin: 0;
@@ -203,11 +194,11 @@
     margin: 0;
     margin-left: 5%;
     display: grid;
-    grid-template-columns: 43.5% 43.5%;;
+    grid-template-columns: 43.5% 43.5%;
     grid-template-rows: repeat(5, auto);
     grid-gap: 1%;
- }
- /*
+  }
+  /*
    .myphoto {
     margin-left: 10%;
     width: 80%;
@@ -269,7 +260,7 @@
     margin-left: 1%;
   }
 
-  .weather-img img{
+  .weather-img img {
     width: 25%;
   }
 
@@ -277,10 +268,10 @@
     width: 80%;
     margin-left: 10%;
   }
-  
-  .link-5 h2{
+
+  .link-5 h2 {
     margin-right: 40px;
-}
+  }
 
   footer {
     border: 1px solid black;
@@ -295,4 +286,4 @@
     margin-left: 2%;
   }
 }
- /* end of media query */
+/* end of media query */

@@ -63,3 +63,32 @@ if ('IntersectionObserver' in window) {
 } else {
   imagesToLoad.forEach((img) => loadImages(img));
 }
+
+// // Locally store date of last visit
+window.localStorage.setItem('lastVisit', currentDate);
+
+// // Retrieve last visit date from local storage
+const lastVisitDate = localStorage.getItem('lastVisit');
+
+const date1 = new Date();
+const date2 = new Date(lastVisitDate);
+
+// // Calculate days between last visit
+const days = (date1, date2) => {
+  let difference = date1.getTime() - date2.getTime();
+  let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+  return TotalDays;
+};
+
+const daysLastVisitText = () => {
+  const dayDiff = days(date1, date2);
+  return `${dayDiff} ${dayDiff > 1 ? 'days' : 'day'}`;
+};
+
+const displayLastVisit = daysLastVisitText();
+
+const lastVisitSelector = document.querySelector('#lastVisit');
+if (lastVisitSelector) lastVisitSelector.innerHTML = displayLastVisit;
+
+const currentDateSelector = document.querySelector('#currentDate');
+if (currentDateSelector) currentDateSelector.innerHTML = currentDate;

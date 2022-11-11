@@ -207,6 +207,10 @@ nav ul li a {
   font-weight: bolder;
 }
 
+.active{
+  border-bottom: 1px solid #ff8c00;
+}
+
 nav ul li a:active{
   border-bottom: 1px #ff8c00 solid;
   color: #00303f;

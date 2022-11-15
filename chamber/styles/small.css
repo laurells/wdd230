@@ -550,3 +550,17 @@ picture img {
   filter: blur(0em);
   transition: filter 0.5s;
 }
+
+/* THANK YOU  */
+.thankYouContainer {
+  color: silver;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 50vh;
+}
+
+.thankYou h1,
+.thankYou p {
+  color: #02254b;
+}

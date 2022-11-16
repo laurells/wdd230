@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=champion&display=swap');
+
+body {
+  background-color: ghostwhite;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'champion', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #02254b;
+}
+
+h2 {
+  color: #9c8321;
+  font-family: 'champion', cursive;
+  font-size: 2rem;
+}
+
+img {
+  width: auto;
+  max-width: 250px;
+  box-shadow:2px 2px 5px silver;
+  border: 1px solid #f2dda4;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.cards section {
+  background: #02254b;
+  border: 6px solid silver;
+  box-shadow:2px 2px 5px silver;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: #02254b;
+  color: #9c8321;
+  margin: 1em;
+  padding: 2em;
+}
+

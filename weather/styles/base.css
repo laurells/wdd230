@@ -19,7 +19,7 @@ body {
 
 main {
   background: silver;
-  border: 0.75em solid #white;
+  border: 0.75em solid silver;
   box-shadow: 0 1.5em 2.5em -0.5em;
   padding: 2em;
   text-align: left;

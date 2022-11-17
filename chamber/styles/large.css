@@ -186,6 +186,9 @@
     min-width: 20%;
   }
 
+  .list section img {
+    display: block;
+  }
   /*----------- FOOTER --------------*/
 
   footer {

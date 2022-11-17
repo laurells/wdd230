@@ -53,9 +53,9 @@
       <nav class="clearfix">
         <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
         <ul id="primary-nav">
-          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
-          <li><a href="directory.html">Directory</a></li>
+          <li><a class="active"  href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
@@ -65,98 +65,18 @@
         <div class="progress-bar" id="progress" style="width: 92.9623%"></div>
       </div>
     </header>
-
-    <!-- NAVIGATION HERE -->
-
-    <!-- MAIN HERE -->
-    <main class="clearfix">
-      <div class="home-grid">
-        <div class="link-1">
-          <figure class="picture">
-            <img
-              src="images/wdd230-org.jpg"
-              class="placeholder-1"
-              alt="placeholder-1"
-              sizes="50vw"
-              srcset="
-                images/small-wdd230-org.jpg  200w,
-                images/medium-wdd230-org.jpg 500w,
-                images/large-wdd230-org.jpg  800w
-              "
-            />
-            <figcaption>Invest with Capital Chamber</figcaption>
-          </figure>
-          <p>
-            You are Welcome to the capital investment's home! If you are looking
-            for properties to invest on consider Capital Investments.
-          </p>
+    <main class="directory">
+      <h1>Business Directory</h1>
+      <div class="menu">
+        <p>Choose layout</p>
+        <div>
+          <button id="grid">Grid</button>
+          <button id="list">List</button>
         </div>
-        <div class="link-2">
-          <a href="#" class="#"
-            ><img
-              src="images/Commercial-Vs-Residential_02-750x370.png"
-              class="placeholder-2"
-              alt="placeholder-2"
-          /></a>
-        </div>
-        <div class="link-3">
-          <a href="#" class="link-3"
-            ><img
-              src="images/gettyimages-1299658677.jpg"
-              class="placeholder-3"
-              alt="placeholder-3"
-          /></a>
-        </div>
-        <div class="link-4">
-          <a href="#" class="link-4"
-            ><img
-              src="images/Sell-Property-Quickly.jpg"
-              class="placeholder-4"
-              alt="placeholder-4"
-          /></a>
-        </div>
-        <div class="link-5">
-          <h2>Local Weather</h2>
-          <picture class="weather-img">
-            <img src="images/weather(2).png" alt="Sunny Weather" />
-          </picture>
-          <section class="celsius"><span class="temperature"></span>°C</section>
-          <h2>Sunny</h2>
-          <p>Speed: <span class="wind"></span> Km/h</p>
-          <p>Wind Chill: <span class="windChill"></span></p>
-        </div>
-        <div class="link-6">
-          <a
-            href="https://www.forbes.com/real-estate/?sh=7974e427730e"
-            class="link-6"
-            ><img
-              src="images/news.jpg"
-              class="placeholder-6"
-              alt="placeholder-6"
-          /></a>
-        </div>
-        <div class="link-7">
-          <a href="#" class="#"
-            ><img
-              src="images/Alaro-city-650x430.jpg"
-              class="placeholder-5"
-              alt="placeholder-5"
-            />
-          </a>
-        </div>
-
-
       </div>
-
-      <div class="lastVisitContainer">
-        <p>
-          It has been <span id="lastVisit"></span> since you last visited this
-          site
-        </p>
-      </div>
+      <hr />
+      <div id="business" class="grid"></div>
     </main>
-
-    <!-- FOOTER HERE -->
     <footer>
       <div class="footer-div-1">
         <img
@@ -172,7 +92,7 @@
         <a class="footer-a" href="#">Link to Map</a>
       </div>
 
-      <hr/>
+      <hr />
 
       <p class="last-p">
         &copy; Capital Chamber of Commerce | Echichinwo Laurels Jr. | WDD 230

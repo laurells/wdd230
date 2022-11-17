@@ -102,6 +102,17 @@
     padding-bottom: 15px;
   }
 
+  .list section {
+    flex-direction: row;
+  }
+
+   /* DISCOVER */
+   
+
+  .discoverContainer section img:hover {
+    box-shadow: 0 5px 20px #333;
+  }
+
   /*----------- NAVIGATION --------------*/
 
   nav ul,

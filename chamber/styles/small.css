@@ -533,6 +533,16 @@ section{
   margin-top: 30px;
 }
 
+.membership h2 {
+  text-align: center;
+}
+
+.membership ul li {
+  list-style-type: none;
+  margin-top: 10px;
+  text-align: left;
+}
+
 main {
   background-color: white;
   padding: 0.5em;
@@ -563,4 +573,78 @@ picture img {
 .thankYou h1,
 .thankYou p {
   color: #02254b;
+}
+
+/* DIRECTORY */
+.directory {
+  padding-bottom: 5em;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.grid section,
+.list section {
+  background: var(--secondary-color);
+  border: 0.55em solid var(--primary-color);
+  box-shadow: 0 1.5em 2.5em -0.5em;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid section p,
+.list section p {
+  text-align: left;
+}
+
+.grid section a,
+.list section a {
+  display: block;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.grid img,
+.list img {
+  width: auto;
+  box-shadow: 0 0 30px#716f6a;
+}
+
+.menu {
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 3em;
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+.menu p {
+  color: var(--accent-color);
+}
+
+.menu button {
+  margin: 0 10px;
+  padding: 1em 3em;
+}
+
+.menu div {
+  display: flex;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.list section img {
+  display: none;
 }

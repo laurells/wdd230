@@ -306,8 +306,23 @@ input[type="number"] {
     sans-serif, "Helvetica", sans-serif;
 }
 
-.temperature {
+.cloudy {
   margin-left: 10px;
+}
+
+.wind-speed {
+  margin-left: -10px;
+}
+
+.temperature {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+img.weather-icon{
+  width: 30px;
+  height: 170px
 }
 button,
 input {
@@ -397,7 +412,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  column-gap: 10px;
+
 }
 
 section.discover h2, section.discover p{
@@ -419,6 +434,14 @@ div.membership h2 {
   display: flex;
   justify-content: center;
 }
+
+
+div.membership ul li p{
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+
 
 label,
 small {
@@ -648,3 +671,4 @@ picture img {
 .list section img {
   display: none;
 }
+

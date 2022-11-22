@@ -47,10 +47,6 @@
     padding-bottom: 2%;
   }*/
 
-  .joinContainer div {
-    flex-direction: row;
-  }
-
   .membership {
     width: 50%;
   }
@@ -125,6 +121,22 @@
     grid-gap: 1%;
   }
 
+  .joinContainer div {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .membership {
+    width: 50%;
+    justify-content: center;
+
+  }
+
+  div.membership h2{
+    justify-content: center;
+  }
+
   /*.myphoto{
         margin-top: 2.5%;
         width: 82%;
@@ -189,6 +201,8 @@
   .list section img {
     display: block;
   }
+
+  
   /*----------- FOOTER --------------*/
 
   footer {

@@ -117,13 +117,24 @@
         </div>
         <div class="link-5">
           <h2>Local Weather</h2>
-          <picture class="weather-img">
+
+          <!--<picture class="weather-img">
             <img src="images/weather(2).png" alt="Sunny Weather" />
-          </picture>
+          </picture> 
           <section class="celsius"><span class="temperature"></span>°C</section>
           <h2>Sunny</h2>
           <p>Speed: <span class="wind"></span> Km/h</p>
-          <p>Wind Chill: <span class="windChill"></span></p>
+          <p>Wind Chill: <span class="windChill"></span></p>-->
+          <img
+            class="weather-icon"
+            src="images/weather-icon.webp"
+            alt="cloud"
+          />
+          <span class="temperature"></span>
+          <p class="cloudy"></p>
+          <span class="line"></span>
+          <span class="wind-speed"></span>
+          <p class="wind">Wind Chill: <span class="windchill"></span></p>
         </div>
         <div class="link-6">
           <a
@@ -144,8 +155,6 @@
             />
           </a>
         </div>
-
-
       </div>
 
       <div class="lastVisitContainer">
@@ -172,11 +181,11 @@
         <a class="footer-a" href="#">Link to Map</a>
       </div>
 
-      <hr/>
+      <hr />
 
       <p class="last-p">
-        &copy; Capital Chamber of Commerce | Echichinwo Laurels Jr. | WDD 230
-        Project <span id="last-updated"></span>
+        &copy; <span id="year"></span> Capital Chamber of Commerce | Echichinwo
+        Laurels Jr. | WDD 230 Project <span id="last-updated"></span>
       </p>
     </footer>
 

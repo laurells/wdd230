@@ -109,7 +109,6 @@ img#logo-image {
 div.topbar {
   position: relative;
   display: flex;
-  flex-direction: reverse;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -417,7 +416,7 @@ hr {
 
 section.discover h2, section.discover p{
   color: #02254b;
-  font-size: bold;
+  font-size: 20px;
 }
 
 

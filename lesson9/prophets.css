@@ -32,7 +32,7 @@ img {
 }
 
 .cards section {
-  background: #02254b;
+  background: #ADD8E6;
   border: 6px solid silver;
   box-shadow:2px 2px 5px silver;
   border-radius: 10px;
@@ -42,9 +42,10 @@ img {
 }
 
 footer {
-  background-color: #02254b;
-  color: #9c8321;
+  background-color: WHITE ;
+  color: #02254B;
   margin: 1em;
   padding: 2em;
+  border: 2px solid silver
 }
 

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+  <head>
+    <title>Capital Chamber of Commerce | Home</title>
+    <meta charset="utf-8" />
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Capital Chamber of Commerce Web Site" />
+
+    <!-- STYLE SHEETS -->
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="styles/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
+    <link href="styles/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
+    <link href="styles/large.css" rel="stylesheet" />
+
+    <!-- Font Families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  </head>
+
+  <body>
+    <!-- HEADER HERE -->
+    <header id="master" class="main-header">
+      <div class="topbar">
+        <div class="topbar_message">
+          <p>
+            Welcome to the Home of Investment. 🤝🏼 Come join us for the chamber
+            meet and greet Wednesday at 7:00 p.m.
+          </p>
+        </div>
+        <div id="date">
+          <span id="currentDate"></span>
+        </div>
+      </div>
+
+      <img
+        id="logo-image"
+        src="images/capital.webp"
+        alt="Capital Chamber of Commerce Logo"
+      />
+      <h1 id="title-page">Capital Chamber of Commerce</h1>
+      <h2>No 1. Real Estate Investment Platform</h2>
+
+      <nav class="clearfix">
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primary-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a  class="active" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="progress-container">
+        <div class="progress-bar" id="progress" style="width: 92.9623%"></div>
+      </div>
+    </header>
+    <main class="body">
+        <div class="container">
+            <div class="content">
+              <div class="left-side">
+                <div class="address details">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="topic">Address</div>
+                  <div class="text-one">London, PL45</div>
+                  <div class="text-two">Newcastle 60</div>
+                </div>
+                <div class="phone details">
+                  <i class="fas fa-phone-alt"></i>
+                  <div class="topic">Phone</div>
+                  <div class="text-one">+087 4563 8938</div>
+                  <div class="text-two">+087 9889 8397</div>
+                </div>
+                <div class="email details">
+                  <i class="fas fa-envelope"></i>
+                  <div class="topic">Email</div>
+                  <div class="text-one">capitalchamber@gmail.com</div>
+                  <div class="text-two">info.capitalchamber@gmail.com</div>
+                </div>
+              </div>
+              <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p>Do you have any questions regarding capital chambers? Send us a message today! It's our pleasure to help you.</p>
+              <form action="#">
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your email">
+                </div>
+                <div class="input-box message-box">
+                    <input type="text" placeholder="Enter your message">
+                </div>
+                <div class="button">
+                  <input type="button" value="Send Now" >
+                </div>
+              </form>
+            </div>
+            </div>
+          </div>
+    </main>
+    <footer>
+      <div class="footer-div-1">
+        <img
+          class="logo-img-footer"
+          src="images/capital.webp"
+          alt="Capital Chamber of Commerce Logo"
+        />
+        <h2>Capital Chamber of Commerce</h2>
+        <p class="footer-p-1">Address: No 14, Stadium rd, Ikeja</p>
+        <p class="footer-p-2">Lagos, Nigeria</p>
+        <p class="footer-p-3">capicgroup.com</p>
+        <p class="footer-p-4">(+234)8077591629 | (+234)9013026773</p>
+        <a class="footer-a" href="#">Link to Map</a>
+      </div>
+
+      <hr />
+
+      <p class="last-p">
+        &copy; <span id="year"></span> Capital Chamber of Commerce | Echichinwo Laurels Jr. | WDD 230
+        Project <span id="last-updated"></span>
+      </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/windchill.js"></script>
+  </body>
+</html>

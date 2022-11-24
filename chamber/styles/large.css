@@ -124,15 +124,13 @@
   .joinContainer div {
     display: flex;
     flex-direction: row;
-    
   }
 
   .membership {
     width: 50%;
-
   }
 
-  div.membership h2{
+  div.membership h2 {
     text-align: center;
   }
 
@@ -201,7 +199,6 @@
     display: block;
   }
 
-  
   /*----------- FOOTER --------------*/
 
   footer {
@@ -287,4 +284,6 @@
     margin-left: 10%;
     width: 76.5%;
   }
+
+  
 } /* end of media query */

@@ -215,6 +215,10 @@
     margin-left: 2%;
   }
 
+  /* directory */
+  .list section {
+    padding-top: 20px;
+}
   .footer-div-1 {
     max-width: 100%;
     width: 100%;

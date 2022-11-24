@@ -624,9 +624,9 @@ picture img {
 
 .grid section,
 .list section {
-  background: var(--secondary-color);
-  border: 0.55em solid var(--primary-color);
-  box-shadow: 0 1.5em 2.5em -0.5em;
+  background: ghostwhite;
+  border: 1px solid silver;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   margin: 10px;
   padding: 10px;
   text-align: center;
@@ -635,6 +635,24 @@ picture img {
 .grid section p,
 .list section p {
   text-align: left;
+  font-weight: bolder;
+}
+
+.grid h2{
+  color: #02254b;
+  margin-bottom: 20px
+}
+
+.list h2{
+  color: #02254b
+}
+
+div.grid{
+  margin-top: 30px
+}
+
+div.list{
+  margin-top: 30px
 }
 
 .grid section a,
@@ -642,24 +660,25 @@ picture img {
   display: block;
   text-align: left;
   text-decoration: underline;
+  font-weight: bolder
 }
-
-.grid img,
-.list img {
+.grid img {
   width: auto;
-  box-shadow: 0 0 30px#716f6a;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .menu {
   margin: 1rem auto;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.5rem 3em;
-  background-color: var(--primary-color);
   text-align: center;
 }
 
+
 .menu p {
-  color: var(--accent-color);
+  color: grey;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
 }
 
 .menu button {
@@ -669,6 +688,15 @@ picture img {
 
 .menu div {
   display: flex;
+}
+
+
+.list section h2 {
+  margin-left: 20px;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .list {
@@ -682,11 +710,6 @@ picture img {
   flex-direction: column;
   justify-content: space-around;
 }
-
-.list section img {
-  display: none;
-}
-
 /* contact */
 * {
   margin: 0;
@@ -826,6 +849,26 @@ picture img {
 
 .button input[type="button"]:hover {
   background: #ffc800;
+}
+
+.style{
+  color: #7d0f68;
+  text-align: center;
+  margin: auto;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+}
+
+.comtact{
+  text-align: center;
+  margin: auto;
+  letter-spacing: -.03em;
+  font-weight: 600;
+  font-size: 2.1rem;
+  line-height: 1.2;
 }
 
 @media (max-width: 950px) {

@@ -106,8 +106,7 @@
     flex-direction: row;
   }
 
-   /* DISCOVER */
-   
+  /* DISCOVER */
 
   .discoverContainer section img:hover {
     box-shadow: 0 5px 20px #333;
@@ -265,6 +264,8 @@
     grid-column: 2/3;
     grid-row: 5/6;
   }
+
+
   /*----------- FOOTER --------------*/
 
   .logo-image-footer {
@@ -296,7 +297,7 @@
     font-size: 80%;
     margin-left: 2%;
   }
-  
+
   .container {
     width: 90%;
     padding: 30px 40px 40px 35px;

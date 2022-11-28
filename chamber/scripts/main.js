@@ -67,35 +67,27 @@ if ('IntersectionObserver' in window) {
   imagesToLoad.forEach((img) => loadImages(img));
 }
 
-// // Locally store date of last visit
-window.localStorage.setItem('lastVisit', currentDate);
+// visits
 
-// // Retrieve last visit date from local storage
-const lastVisitDate = localStorage.getItem('lastVisit');
+const visitsDisplay = document.querySelector("#lastVisit");
 
-const date1 = new Date();
-const date2 = new Date(lastVisitDate);
 
-// // Calculate days between last visit
-const days = (date1, date2) => {
-  let difference = date1.getTime() - date2.getTime();
-  let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
-  return TotalDays;
-};
+let numVisits = Number(localStorage.getItem('visits-ls'));
 
-const daysLastVisitText = () => {
-  const dayDiff = days(date1, date2);
-  return `${dayDiff} ${dayDiff > 1 ? 'days' : 'day'}`;
-};
 
-const displayLastVisit = daysLastVisitText();
+if (numVisits !== 0) 
+{
+    visitsDisplay.textContent = `number of visist: ${numVisits}`;
+}
 
-const lastVisitSelector = document.querySelector('#lastVisit');
-if (lastVisitSelector) lastVisitSelector.innerHTML = displayLastVisit;
+else 
+{
+    visitsDisplay.textContent = `This is your first visit`;
+}
 
-const currentDateSelector = document.querySelector('#currentDate');
-if (currentDateSelector) currentDateSelector.innerHTML = currentDate;
+numVisits ++;
 
+localStorage.setItem('visits-ls', numVisits);
 // DIRECTORY
 const cards = document.querySelector('.cards');
 
@@ -106,6 +98,9 @@ fetch('./data/data.json')
     const directory = jsonObject['directory'];
     directory.forEach((dir) => displayDirectory(dir));
   });
+
+
+  
 
 function displayDirectory(dir) {
   // Create elements to add to the document
@@ -164,3 +159,4 @@ function showList() {
     display.classList.remove('grid');
   }
 }
+

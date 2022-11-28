@@ -27,7 +27,7 @@ function DisplayWeatherResults(data)
     text = `
     <p>Temperature: <strong>${temperature.toFixed(0)}&deg;F</strong></p>
     <p>Current Condition: ${weatherDescrtiption}</p>
-    <p>Wind speed: ${windSpeed} mph</p>
+    <p>Wind speed: ${windSpeed} Km/h</p>
     <p>Wind chill: ${f.toFixed(0)}</p>`
 
     weatherText.innerHTML = text;

@@ -1,78 +1,76 @@
 {
-    "directory": [
-      {
-        "name": "Daily Sun Pet",
-        "address": "34 Burrows St., Oshawa",
-        "phoneNumber": "647-2345-5432",
-        "website": "https://www.vanguard-pet.com",
-        "imgUrl": "images/farm.jpg",
-        "membershipLevel": "gold"
-      },
-      {
-        "name": "Cars Business",
-        "address": "34 Burrows St., Oshawa",
-        "phoneNumber": "647-2345-5432",
-        "website": "https://www.m-benz.org",
-        "imgUrl": "images/benz.jpg",
-        "membershipLevel": "bronze"
-      },
-  
-      {
-        "name": "Doughnuts",
-        "address": "34 Burrows St., Oshawa",
-        "phoneNumber": "647-2345-5432",
-        "website": "https://www.countrywide.io",
-        "imgUrl": "images/doughnuts.jpg",
-        "membershipLevel": "gold"
-      },
-      {
-        "name": "Courier Services",
-        "address": "34 Burrows St., Oshawa",
-        "phoneNumber": "647-2345-5432",
-        "website": "https://www.stonewall.io",
-        "imgUrl": "images/fendi.jpg",
-        "membershipLevel": "bronze"
-      },
-      {
-        "name": "Real Estate Business",
-        "address": "34 Burrows St., Oshawa",
-        "phoneNumber": "647-2345-5432",
-        "website": "https://www.phoenixbusiness.org",
-        "imgUrl": "images/ikea.jpg",
-        "membershipLevel": "gold"
-      },
-      {
-        "name": "Capital Games",
-        "address": "34 Burrows St., Oshawa",
-        "phoneNumber": "647-2345-5432",
-        "website": "https://www.strikingbasket.org",
-        "imgUrl": "images/starbucks.jpg",
-  
-        "membershipLevel": "silver"
-      },
-      {
-        "name": "Bottle Meta",
-        "address": "34 Burrows St., Oshawa",
-        "phoneNumber": "647-2345-5432",
-        "website": "https://www.laundry.com",
-        "imgUrl": "images/tesla.jpg",
-        "membershipLevel": "bronze"
-      },
-      {
-        "name": "Lasien Foundation",
-        "address": "34 Burrows St., Oshawa",
-        "phoneNumber": "647-2345-5432",
-        "website": "https://www.nailstrings.org",
-        "imgUrl": "images/man-u.jpg",
-        "membershipLevel": "silver"
-      },
-      {
-        "name": "Ekovolt Internet",
-        "address": "34 Burrows St., Oshawa",
-        "phoneNumber": "647-2345-5432",
-        "website": "https://www.gatewayvortex.org",
-        "imgUrl": "images/cofee.jpg",
-        "membershipLevel": "np"
-      }
-    ]
-  }
+  "directory": [
+    {
+      "name": "Daily Sun Pet",
+      "address": "34 Burrows St., Oshawa",
+      "phoneNumber": "647-2345-5432",
+      "website": "https://www.vanguard-pet.com",
+      "imgUrl": "images/farm.jpg",
+      "membershipLevel": "gold"
+    },
+    {
+      "name": "Cars Business",
+      "address": "34 Burrows St., Oshawa",
+      "phoneNumber": "647-2345-5432",
+      "website": "https://www.m-benz.org",
+      "imgUrl": "images/benz.jpg",
+      "membershipLevel": "bronze"
+    },
+    {
+      "name": "Doughnuts",
+      "address": "34 Burrows St., Oshawa",
+      "phoneNumber": "647-2345-5432",
+      "website": "https://www.countrywide.io",
+      "imgUrl": "images/doughnuts.jpg",
+      "membershipLevel": "gold"
+    },
+    {
+      "name": "Courier Services",
+      "address": "34 Burrows St., Oshawa",
+      "phoneNumber": "647-2345-5432",
+      "website": "https://www.stonewall.io",
+      "imgUrl": "images/fendi.jpg",
+      "membershipLevel": "bronze"
+    },
+    {
+      "name": "Real Estate Business",
+      "address": "34 Burrows St., Oshawa",
+      "phoneNumber": "647-2345-5432",
+      "website": "https://www.phoenixbusiness.org",
+      "imgUrl": "images/ikea.jpg",
+      "membershipLevel": "gold"
+    },
+    {
+      "name": "Capital Games",
+      "address": "34 Burrows St., Oshawa",
+      "phoneNumber": "647-2345-5432",
+      "website": "https://www.strikingbasket.org",
+      "imgUrl": "images/starbucks.jpg",
+      "membershipLevel": "silver"
+    },
+    {
+      "name": "Bottle Meta",
+      "address": "34 Burrows St., Oshawa",
+      "phoneNumber": "647-2345-5432",
+      "website": "https://www.laundry.com",
+      "imgUrl": "images/tesla.jpg",
+      "membershipLevel": "bronze"
+    },
+    {
+      "name": "Lasien Foundation",
+      "address": "34 Burrows St., Oshawa",
+      "phoneNumber": "647-2345-5432",
+      "website": "https://www.nailstrings.org",
+      "imgUrl": "images/man-u.jpg",
+      "membershipLevel": "silver"
+    },
+    {
+      "name": "Ekovolt Internet",
+      "address": "34 Burrows St., Oshawa",
+      "phoneNumber": "647-2345-5432",
+      "website": "https://www.gatewayvortex.org",
+      "imgUrl": "images/cofee.jpg",
+      "membershipLevel": "np"
+    }
+  ]
+}

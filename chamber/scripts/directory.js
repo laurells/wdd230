@@ -121,6 +121,6 @@ function displaySpotlight(dir) {
   card.appendChild(website);
 
   // Add/append the existing HTML div with the cards class with the section(card)
-  const divGrid = document.querySelector('.spotlightContainer');
+  const divGrid = document.querySelector('.link-4');
   if (divGrid) divGrid.appendChild(card);
 }

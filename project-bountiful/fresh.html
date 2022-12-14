@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>"Water Rafting vacation | Whitewater Boating | Home" </title>
+    <meta name="description" content="Bountiful Foods Website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@100&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div id="content">
+        <header id="master" class="main-header">
+            <div class="topbar">
+                <div class="topbar_message">
+                    <p>
+                        Welcome to Bountiful foods. 🤝🏼 Come join us to stay fresh like us!
+                        Meet and greet Wednesday at 7:00 p.m.
+                    </p>
+                </div>
+            </div>
+            <div class="nav-bar">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo.webp" alt="Logo image">
+            </a>
+            
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="fresh.html">Fresh</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+            </div>
+
+        </header>
+
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/fruit8.jpg" alt="People enjoying white water rafting">
+            </div>
+        </div>
+
+<main class="freshContainer">
+    <div class="specialty">
+        <h1>Make your own specialty drinks</h1>
+        <form id="fruitForm" method="get">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label class="top">First Name* <input id="first_name" type="text" name="fname" required></label>
+                <label class="top">Email* <input id="email" type="email" name="email" placeholder="example@gmail.com" required></label>
+                <label class="top">Phone* <input id="phone" type="tel" name="phone" placeholder="18085556487" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Pick your ingredients</legend>
+                <label class="top" for="fruit">Choose 3 of our fresh produce options:
+                    <select name="fruit1" id="fruit1">
+                        <option value="">Please Select &#9662;</option>
+                    </select>
+                    <select name="fruit2" id="fruit2">
+                        <option value="">Please Select &#9662;</option>
+                    </select>
+                    <select name="fruit3" id="fruit3">
+                        <option value="">Please Select &#9662;</option>
+                    </select>
+                </label>
+                <label class="top">Special Instructions<textarea id="instructions" name="instructions"></textarea></label>
+
+                <input type="hidden" id="date" name="date" value="CurrentTime"> 
+                <input type="hidden" id="time" name="time" value="CurrentDate">
+            </fieldset>                    
+            <input type="submit" onclick="removeHidden()" value="Make My Drink" class="submitBtn">
+        </form>
+        <div class="drink-results hide-div">
+            <h3>Thank You!<br>Your order has been sent!</h3>
+            <div>First Name: <span id="result_firstname"></span></div>
+            <div>Email: <span id="result_email"></span></div>
+            <div>Phone: <span id="result_phone"></span></div>
+            <div>Fruit 1: <span id="result_fruit1"></span></div>
+            <div>Fruit 2: <span id="result_fruit2"></span></div>
+            <div>Fruit 3: <span id="result_fruit3"></span></div>
+            <div>Instructions: <span id="result_instructions"></span></div>
+            <div>Carbohydrates: <span id="carbs"></span></div>
+            <div>Protein: <span id="protein"></span></div>
+            <div>Fat: <span id="fat"></span></div>
+            <div>Sugar: <span id="sugar"></span></div>
+            <div>Calories: <span id="calories"></span></div> 
+            <div>Order Date: <span id="order_date"></span></div>
+        </div>
+
+    <hr />
+    </div>
+    </main>
+    <footer>
+        <div class="footer-div-1">
+            <img class="logo-img-footer" src="images/logo.webp" alt="Capital Chamber of Commerce Logo" />
+            <h2>Bountiful foods </h2>
+            <p class="footer-p-1">Address: No 14, Stadium rd, Ikeja</p>
+            <p class="footer-p-2">Lagos, Nigeria</p>
+            <p class="footer-p-3">bountifoods.com</p>
+            <p class="footer-p-4">(+234)8077591629 | (+234)9013026773</p>
+            <a class="footer-a" href="#">Link to Map</a>
+        </div>
+
+        <hr />
+
+        <p class="last-p">
+            &copy; <span id="year"></span> Bountiful Foods | Echichinwo
+            Laurels Jr. | WDD 230 Project <span id="last-updated"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>

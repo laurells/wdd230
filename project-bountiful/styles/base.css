@@ -97,6 +97,7 @@ nav a {
     line-height: 1.6;
 }
 
+
 .logo{
     padding: 15px 15px ;
 }
@@ -563,6 +564,9 @@ main section {
 
 }
 
+#last-updated{
+    color: #167b1a
+}
 
 #logo_link {
     padding-top: 5px;
@@ -628,63 +632,7 @@ main section img {
 }
 
 
-@media screen and (max-width: 900px) {
 
-    #hero,
-    .home-grid {
-        display: flex;
-        height: auto;
-    }
-
-    nav,
-    footer {
-        flex-direction: column;
-    }
-
-    nav a {
-        display: block;
-        padding: 15px;
-    }
-
-    #hero {
-        margin-top: 0;
-    }
-
-    #hero-msg {
-        margin-top: 0;
-    }
-
-    #hero-msg h4 {
-        display: none;
-    }
-
-    .home-title {
-        font-size: 25px;
-        color: #167b1a;
-    }
-
-    .rivers-card,
-    .camping-card,
-    .rapids-card {
-        margin: 50px auto;
-        width: 60%;
-    }
-
-    #background {
-        display: none;
-    }
-
-    .mountains,
-    .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-
-    footer {
-        margin-top: 25px;
-    }
-}
 
 /* contact */
 * {

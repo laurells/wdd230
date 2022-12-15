@@ -7,7 +7,7 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 const apiKey = '456fe3e90b6ba4cb4d6f63ef49c97465';
-const q = 'San-Antonio';
+const q = 'Carlsbad';
 const units = 'imperial';
 // Tried this to fetch 3 day forecast but it returns nesting arrays of forecast for every 3hrs. I tried fetching to exclude hourly forecasts but it doesn't seem to work and I'm running out of time :(
 // const url = `https://api.openweathermap.org/data/2.5/forecast?q=${q}&current=current&weather?units=${units}&appid=${apiKey}`;

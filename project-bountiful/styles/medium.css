@@ -21,6 +21,11 @@
     margin-left: 10%;
   }
 
+  #primaryNav {
+    top: auto;
+    right: 0;
+  }
+
   .link-5 h2 {
     margin-right: 40px;
   }
@@ -79,4 +84,5 @@
     width: 75%;
     margin-left: 55px;
   }
+  
 }

@@ -30,6 +30,13 @@
   ul.drink-button li {
       margin-right: 19%;
   }
+
+  #primaryNav {
+    top: auto;
+    right: 0;
+  }
+
+  
   footer {
     color: #02254b;
   }

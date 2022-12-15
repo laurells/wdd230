@@ -1,74 +1,56 @@
 
 
-// DIRECTORY
-const cards = document.querySelector('.cards');
-const getCoastalList = async () => {
-  let coastal = [];
-  await fetch('./data/coastal.json')
-    .then((res) => res.json())
-    .then((data) =>
-      data.directory.forEach((coastal) => {
-        displayCoastal(coastal);
-      })
-    );
+// Hamburger button toggle menu
+function toggleMenu() {
+  const primaryNavElement = document.getElementById('primaryNav');
+  if (primaryNavElement) primaryNavElement.classList.toggle('open');
 
-  // Selects 3 random business with gold/silver status
-  const randomSpotlight = getMultipleRandom(
-    coastal.filter(
-      (business) =>
-        business.membershipLevel === 'gold' ||
-        business.membershipLevel === 'silver'
-    ),
-    3
-  );
+  const hamburgerBtnElement = document.getElementById('hamburgerBtn');
+  if (hamburgerBtnElement) hamburgerBtnElement.classList.toggle('open');
+}
 
-  randomSpotlight.forEach((a) => displaySpotlight(a));
+const menuButton = document.getElementById('hamburgerBtn');
+if (menuButton) menuButton.onclick = toggleMenu;
+
+const startElement = document.getElementById('start');
+if (startElement) {
+  startElement.onclick = function () {
+    location.href = 'https://laurells.github.io/wdd230/project-bountiful/fresh.html';
+  };
+}
+
+// Lazy loading images
+const imagesToLoad = document.querySelectorAll('img[data-src]');
+
+const loadImages = (image) => {
+  image.setAttribute('src', image.getAttribute('data-src'));
+  image.onload = () => {
+    image.removeAttribute('data-src');
+  };
 };
 
-getCoastalList();
+const imgOptions = {
+  threshold: 0.5,
+  rootMargin: '0px 0px 50px 0px',
+};
 
-function getMultipleRandom(arr, num) {
-  const shuffled = [...arr].sort(() => 0.5 - Math.random());
-
-  return shuffled.slice(0, num);
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(
+    (items, observer) =>
+      items.forEach((item) => {
+        if (item.isIntersecting) {
+          loadImages(item.target);
+          observer.unobserve(item.target);
+        }
+      }),
+    imgOptions
+  );
+  imagesToLoad.forEach((img) => observer.observe(img));
+} else {
+  imagesToLoad.forEach((img) => loadImages(img));
 }
 
-function displayCoastal(coastal) {
-  // Create elements to add to the document
-  let card = document.createElement('section');
-  let div1 = document.createElement('div');
-  let div2 = document.createElement('div');
-  let image = document.createElement('img');
-  let name = document.createElement('h3');
-  let description = document.createElement('p');
-  let credit = document.createElement('p');
 
-  // Change the textContent property of the h2 element to contain the prophet's full name
-  if (name) name.textContent = coastal.name;
-  if (description) description.textContent = `${coastal.description}`;
-  if (credit) credit.textContent = `${coastal.imgCredits}`;
-
-  // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
-  image.setAttribute('src', coastal.imgUrl);
-  image.setAttribute('alt', `${coastal.name}`);
-  image.setAttribute('loading', 'lazy');
-
-  // Add/append the section(card) with the h2 element
-  div1.appendChild(image);
-  // div1.appendChild(credit);
-  div2.appendChild(name);
-  div2.appendChild(description);
-
-  card.appendChild(div1);
-  card.appendChild(div2);
-  
-
-  // Add/append the existing HTML div with the cards class with the section(card)
-  const divGrid = document.querySelector('#coastal');
-  if (divGrid) divGrid.appendChild(card);
-}
-
-const display = document.querySelector('#coastal');
 
 //fruits
 
